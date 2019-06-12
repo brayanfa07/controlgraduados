@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Control de Graduados</title>
+</head>
+
+<body>
+    <div id="container">
+        <% include partials/head.html %>
+        <div id="body">
+            <div class="col-md-3 mx-auto mt-5">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h1>INICIO DE SESIÓN</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="auth" method="POST">
+                            <div class="form-group">
+                                <input type="username" name="username" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Nombre de usuario"
+                                    style="text-align:center">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control"
+                                    id="exampleFormControlInput2" placeholder="Contraseña" style="text-align:center">
+                            </div>
+                            <button type="submit" class="btn btn-warning">Ingresar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% include partials/footer.html%>
+    </div>
+</body>
+
+</html>
